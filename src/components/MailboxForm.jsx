@@ -13,7 +13,7 @@ const MailboxForm = ({ addBox, history }) => {
 
     addBox(newMailbox);
  
-    history.push('/mailboxes');
+    history.push('./mailboxes');
   };
 
   return (

@@ -16,11 +16,10 @@ function App() {
       boxSize: formData.boxSize,
     };
     setMailboxes([...mailboxes, newMailbox]);
-    history.push('/mailboxes');
+    history.push('./mailboxes');
   };
 
   return (
-    <BrowserRouter>
       <div className="App">
         <Navbar />
         <Routes>
@@ -30,7 +29,6 @@ function App() {
           <Route path="/mailboxes/:mailboxId" element={<MailboxDetails mailboxes={mailboxes} />} />
         </Routes>
       </div>
-    </BrowserRouter>
   );
 }
 
